@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import styled from 'styled-components';
+import Header from './components/Header';
+import MainContent from './components/MainContent';
+import Footer from './components/Footer';
 
-function App() {
+import background from './images/background.jpg';
+
+
+const App = () => {
+  console.log('background', background)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContent>
+      <Container>
+        <Header />
+        <MainContent />
+        <Footer />
+      </Container>
+    </AppContent>
   );
 }
+
+const AppContent = styled.div`
+    background: url(${background});
+    background-size: contain;
+    background-repeat: repeat;
+`;
+
+const Container = styled.section`
+    margin: 0 auto;
+    width: 75rem;
+`;
 
 export default App;

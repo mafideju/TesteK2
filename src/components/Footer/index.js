@@ -41,7 +41,7 @@ const Image = styled.img`
 `;
 
 const Copyright = styled.h4`
-    font-weight: 400;
+    font-weight: 300;
 `;
 
 export default Footer;

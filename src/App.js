@@ -23,8 +23,6 @@ const App = () => {
 
 const AppContent = styled.div`
     background: url(${background});
-    background-size: contain;
-    background-repeat: repeat;
 `;
 
 const Container = styled.section`

@@ -61,7 +61,7 @@ const ContentCallText = styled.h3`
 
 const CardContainer = styled.div`
     display: flex;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     justify-content: space-between;
 `;
 

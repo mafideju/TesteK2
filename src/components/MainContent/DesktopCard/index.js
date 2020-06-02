@@ -14,20 +14,22 @@ const DesktopCard = () => {
                 <CardTitle>Site Responsivo DESKTOP</CardTitle>
             </CardHeader>
             <CardBody>
-                <CardText>Quando pressionado o botão Leia mais... o restante da informação deverá aparecer em scroll down.</CardText>
-                <CardButton>Leia mais...</CardButton>
+                <CardText>Quando pressionado o botão <B>Leia mais...</B> o restante da informação deverá aparecer em scroll down.</CardText>
+                <ButtonContainer>
+                    <CardButton>Leia mais...</CardButton>
+                </ButtonContainer>
             </CardBody>
         </Card>
     );
 }
 
 const Card = styled.article`
-    width: 31%;
+    width: 32%;
 `;
 
 const CardHeader = styled.div`
     background-color: ${COLORS.reddish};
-    padding: 0.5rem 0 1.5rem 0;
+    padding: 0.5rem 0 2.5rem 0;
 `;
 
 const ImageContainer = styled.figure`
@@ -43,17 +45,42 @@ const CardTitle = styled.h1`
     color: white;
     font-size: 1.8rem;
     font-weight: 300;
+    letter-spacing: -0.1rem;
     text-align: center;
     margin: 0;
+    padding-top: 0.6rem;
 `;
 
 const CardBody = styled.div`
+    background-color: white;
+    margin-top: -1rem;
 `;
 
 const CardText = styled.p`
+    padding: 0.5rem;
+    font-weight: 300;
+    text-align: justify;
+`;
+
+const B = styled.b`
+    color: ${COLORS.grey}
+`;
+
+const ButtonContainer = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 1rem 1rem 0;
 `;
 
 const CardButton = styled.button`
+    background-color: ${COLORS.reddish};
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.25rem;
+    letter-spacing: -0.1rem;
+    padding: 0.35rem;
+    outline: none;
 `;
 
 // const Card = styled.article`

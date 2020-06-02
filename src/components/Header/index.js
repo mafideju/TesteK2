@@ -22,10 +22,10 @@ const Header = () => {
 }
 
 const HeaderContainer = styled.section`
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid ${COLORS.greyHelper};
+    display: flex;
+    justify-content: space-between;
 `;
 
 const MainNav = styled.ul`
@@ -36,10 +36,12 @@ const MainNav = styled.ul`
 const MainNavLink = styled.a`
     color: ${COLORS.green};
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 300;
     padding: 0.5rem;
     text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: -0.2rem;
+    line-height: 4.5rem;
 `;
 
 export default Header;
